@@ -1,0 +1,39 @@
+.ourvision-wrapper {
+  width: 100%;
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+}
+
+.ourvision-title-text {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.ourvision-content-text {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.ourvision-container {
+  height: 61rem;
+  width: 111.125rem;
+  background-color: #fe912a0d;
+  border-radius: 5rem;
+  margin-bottom: 3.25rem;
+  padding: 5rem 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.svg-wrapper {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.75rem;
+}

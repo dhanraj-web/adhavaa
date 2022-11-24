@@ -3,6 +3,8 @@
 @import "./variables.style.css";
 @import "./banner.style.css";
 @import "./ourproducts.style.css";
+@import "./carousalsection.style.css";
+@import "./visionsection.style.css";
 
 * {
   padding: 0;
