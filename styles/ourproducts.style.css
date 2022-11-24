@@ -1,0 +1,130 @@
+.our-products-wrapper {
+  height: 20vh;
+  width: 100%;
+  padding-top: 23.75rem;
+}
+
+.our-products-container {
+  position: relative;
+  margin: auto;
+  max-width: 114.5625rem;
+  padding-top: 5.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-text {
+  color: var(--secondary);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtitle-text {
+  font-size: 2.75rem;
+  font-weight: 500;
+  margin: 1.875rem 0;
+}
+
+.content-text {
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.card-content {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  text-align: center;
+}
+
+.product-cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.125rem;
+  margin: 6.25rem 0;
+}
+
+.product-card {
+  width: 28.6875rem;
+  height: 38.125rem;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.25rem;
+}
+
+.product-card:hover {
+  background: radial-gradient(
+    1081.55% 50% at 50% 50%,
+    #fe912a 0%,
+    #ffad5f 100%
+  );
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  color: var(--white);
+}
+
+.product-card .explore-btn {
+  color: var(--main-bg);
+  background-color: var(--secondary);
+  font-weight: 600;
+  font-size: 1rem;
+  height: 2.75rem;
+  width: 7.625rem;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.product-card:hover .explore-btn {
+  color: var(--secondary);
+  background-color: var(--main-bg);
+}
+
+.product-card .mis-img {
+  background-image: url(../images/mis.svg);
+  height: 10rem;
+  width: 10rem;
+}
+
+.product-card:hover .mis-img {
+  background-image: url(../images/mis-white.svg);
+  height: 10rem;
+  width: 10rem;
+}
+.product-card .pos-img {
+  background-image: url(../images/pos.svg);
+  height: 10rem;
+  width: 10rem;
+}
+
+.product-card:hover .pos-img {
+  background-image: url(../images/pos-white.svg);
+  height: 10rem;
+  width: 10rem;
+}
+.product-card .satelite-img {
+  background-image: url(../images/chitta-satellite.svg);
+  height: 10rem;
+  width: 10rem;
+}
+
+.product-card:hover .satelite-img {
+  background-image: url(../images/chitta-satellite-white.svg);
+  height: 10rem;
+  width: 10rem;
+}
