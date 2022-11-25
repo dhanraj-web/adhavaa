@@ -3,6 +3,7 @@
   color: var(--primary);
   display: flex;
   justify-content: center;
+  height: 67.5rem;
 }
 
 .ourvision-title-text {
@@ -29,6 +30,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  max-width: 114.5625rem;
+  position: relative;
+  margin: auto;
 }
 .svg-wrapper {
   width: 100%;

@@ -1,11 +1,21 @@
-.banner-container {
+.banner-wrapper {
   background: linear-gradient(
     180deg,
     #fff6ec 0%,
     rgba(255, 246, 237, 0.2) 100%
   );
-  height: 200vh;
+  min-height: 101.25rem;
+  height: 100%;
   position: relative;
+}
+
+.banner-container {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  top: -32.8125rem;
+  width: 100%;
+  height: 57.5rem;
 }
 
 .banner {
@@ -28,15 +38,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-
-.banner-wrapper {
-  position: absolute;
-  display: grid;
-  place-content: center;
-  top: -32.8125rem;
-  width: 100%;
-  height: 57.5rem;
 }
 
 .banner-title {
