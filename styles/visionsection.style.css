@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   height: 67.5rem;
+  padding: 4.375rem;
 }
 
 .ourvision-title-text {
@@ -20,7 +21,7 @@
 }
 
 .ourvision-container {
-  height: 61rem;
+  /* height: 61rem; */
   width: 111.125rem;
   background-color: #fe912a0d;
   border-radius: 5rem;
@@ -34,6 +35,13 @@
   position: relative;
   margin: auto;
 }
+
+@media only screen and (max-width: 768px) {
+  .ourvision-container {
+    padding: 2.5rem;
+  }
+}
+
 .svg-wrapper {
   width: 100%;
   height: 10rem;
