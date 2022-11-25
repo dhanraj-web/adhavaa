@@ -1,8 +1,13 @@
 .management-wrapper {
   width: 100%;
-  height: 60rem;
-  margin: 5rem 0;
   color: var(--primary);
+  min-height: 67.5rem;
+}
+
+.management-container {
+  max-width: 114.5625rem;
+  position: relative;
+  margin: auto;
 }
 
 .carousel-item {
