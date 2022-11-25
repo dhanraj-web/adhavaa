@@ -32,14 +32,20 @@
   color: var(--black);
   padding: 0.5rem 0;
 }
-
+.nav-bar a:hover{
+  border-bottom: 3px solid var(--secondary);
+  color: var(--black);
+}
+.nav-bar a.active{
+  border-bottom: 3px solid var(--secondary)
+}
 .nav-bar a::after {
   content: "";
   display: block;
   margin: 0 auto;
   width: 50%;
   padding-top: 8px;
-  border-bottom: 3px solid var(--secondary);
+  /* border-bottom: 3px solid var(--secondary); */
 }
 
 .launchContainer {
