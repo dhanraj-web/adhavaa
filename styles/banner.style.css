@@ -1,20 +1,15 @@
 .banner-wrapper {
-  /* background: linear-gradient(
+  background: linear-gradient(
     180deg,
     #fff6ec 0%,
     rgba(255, 246, 237, 0.2) 100%
-  ); */
+  );
   /* min-height: 101.25rem;
   height: 100%; */
   position: relative;
 }
 
 .banner-container {
-  background: linear-gradient(
-    180deg,
-    #fff6ec 0%,
-    rgba(255, 246, 237, 0.2) 100%
-  );
   position: absolute;
   display: grid;
   place-content: center;
@@ -100,6 +95,8 @@
   font-weight: 900;
 }
 
+
+
 @media only screen and (max-width: 1000px) {
   .banner-title {
     font-size: 2rem;
@@ -115,5 +112,10 @@
 @media only screen and (max-width: 500px) {
   .custom-input {
     width: 20rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .banner-title {
+    line-height: 3rem;
   }
 }
