@@ -2,15 +2,12 @@
   height: 39.5rem;
   background-color: var(--main-bg);
   width: 100%;
-  max-width: 114.5625rem;
-  position: relative;
-  margin: auto;
 }
 
 .header-container {
   width: 100%;
   height: 6.6875rem;
-  padding: 0 15rem;
+  padding: 0 14%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -26,6 +23,47 @@
   font-weight: 600;
 }
 
+.mobile-nav {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: none;
+  z-index: 999;
+}
+
+.mobile-nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
+  padding: 0.5rem 0;
+}
+
+.mobile-nav-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.mobile-nav a:hover {
+  border-bottom: 3px solid var(--secondary);
+  color: var(--black);
+}
+.mobile-nav a.active {
+  border-bottom: 3px solid var(--secondary);
+}
+.mobile-nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
+  padding: 0.5rem 0;
+}
+
 .nav-bar a {
   cursor: pointer;
   text-decoration: none;
@@ -33,13 +71,29 @@
   padding: 0.5rem 0;
 }
 
+.close-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+}
+
+.nav-bar a:hover {
+  border-bottom: 3px solid var(--secondary);
+  color: var(--black);
+}
+.nav-bar a.active {
+  border-bottom: 3px solid var(--secondary);
+}
 .nav-bar a::after {
   content: "";
   display: block;
   margin: 0 auto;
   width: 50%;
   padding-top: 8px;
-  border-bottom: 3px solid var(--secondary);
+  /* border-bottom: 3px solid var(--secondary); */
 }
 
 .launchContainer {
@@ -56,4 +110,59 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0.625rem;
   border: none;
+}
+
+.toggle-btn {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+#logo2 {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-container {
+    padding: 0 10%;
+  }
+
+  .nav-bar {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header-container {
+    padding: 0 10%;
+  }
+
+  .nav-bar {
+    gap: 2rem;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .launchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #logo2 {
+    display: block;
+  }
+
+  #logo1 {
+    display: none;
+  }
 }

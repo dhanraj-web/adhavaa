@@ -18,24 +18,54 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <script>
+      const showNav = () => {
+        document.getElementById("mobile-nav").style.display = "block";
+      };
+      const hideNav = () => {
+        document.getElementById("mobile-nav").style.display = "none";
+      };
+    </script>
     <title>Adhavaa</title>
   </head>
   <body>
     <!-- Header   -->
     <div class="header-wrapper">
       <nav class="header-container">
-        <img src="./images/AdhavaMainLogo.svg" alt="adhava logo" />
+        <img src="./images/AdhavaMainLogo.svg" alt="adhava logo" id="logo1" />
+        <img
+          src="./images/AdhavaaMobileLogo.svg"
+          alt="adhava logo mobile"
+          id="logo2"
+        />
         <div class="nav-bar">
-          <a href="#">Home</a>
+          <a class="active" href="index.html">Home</a>
           <a href="#">Our Products</a>
           <a href="#">FPO's</a>
           <a href="#">About Us</a>
         </div>
-        <div class="launchContainer">
-          <img src="./images/CartIcon.svg" alt="cart icon" />
-          <button class="launch-btn">Launch</button>
+        <div style="display: flex; align-items: center; gap: 1.5rem">
+          <div class="launchContainer" id="launchContainer">
+            <img src="./images/CartIcon.svg" alt="cart icon" />
+            <button class="launch-btn">Launch</button>
+          </div>
+          <button class="toggle-btn" onclick="showNav()">
+            <img src="./images/burgermenu-icon.svg" alt="" />
+          </button>
         </div>
       </nav>
+      <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-container">
+          <button onclick="hideNav()" class="close-btn">
+            <img src="./images/close-icon.svg" alt="" />
+          </button>
+          <a class="active" href="index.html">Home</a>
+          <a href="#">Our Products</a>
+          <a href="#">FPO's</a>
+          <a href="#">About Us</a>
+        </div>
+      </div>
     </div>
 
     <!-- Banner   -->
@@ -67,53 +97,53 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- our products  -->
-      <div class="our-products-wrapper">
-        <div class="our-products-container">
-          <p class="title-text">Our products</p>
-          <p class="subtitle-text">Explore wide range of tools for your FPO.</p>
-          <p class="content-text">
-            We cover all aspects of farming by using technology as our primary
-            weapon. We are in a mission to bring farmers the appreciation that
-            <br />
-            they deserve. Our tools are robust as well as adaptive to most FPO’s
-            out there. Join us, on our mission and be part of Adhavaa.
-          </p>
+    <!-- our products  -->
+    <div class="our-products-wrapper">
+      <div class="our-products-container">
+        <p class="title-text">Our products</p>
+        <p class="subtitle-text">Explore wide range of tools for your FPO.</p>
+        <p class="content-text">
+          We cover all aspects of farming by using technology as our primary
+          weapon. We are in a mission to bring farmers the appreciation that
+          <br />
+          they deserve. Our tools are robust as well as adaptive to most FPO’s
+          out there. Join us, on our mission and be part of Adhavaa.
+        </p>
 
-          <div class="product-cards-container">
-            <div class="product-card">
-              <div class="mis-img"></div>
-              <h3 class="card-header">Management Information System</h3>
-              <h4 class="card-content">
-                FPOs are in dire need of gearing up its data related management
-                systems, all that happens in field, market, storage area, and in
-                meetings should be recorded properly.
-              </h4>
-              <button class="explore-btn">Explore</button>
-            </div>
+        <div class="product-cards-container">
+          <div class="product-card">
+            <div class="mis-img"></div>
+            <h3 class="card-header">Management Information System</h3>
+            <h4 class="card-content">
+              FPOs are in dire need of gearing up its data related management
+              systems, all that happens in field, market, storage area, and in
+              meetings should be recorded properly.
+            </h4>
+            <button class="explore-btn">Explore</button>
+          </div>
 
-            <div class="product-card">
-              <div class="pos-img"></div>
-              <h3 class="card-header">Point of Sale System</h3>
-              <h4 class="card-content">
-                POS is the easiest way to Sale and Purchase as well as managing
-                Stock. Adhavaa POS has powerful features to manage products,
-                sales, purchase and manage inventory.
-              </h4>
-              <button class="explore-btn">Explore</button>
-            </div>
+          <div class="product-card">
+            <div class="pos-img"></div>
+            <h3 class="card-header">Point of Sale System</h3>
+            <h4 class="card-content">
+              POS is the easiest way to Sale and Purchase as well as managing
+              Stock. Adhavaa POS has powerful features to manage products,
+              sales, purchase and manage inventory.
+            </h4>
+            <button class="explore-btn">Explore</button>
+          </div>
 
-            <div class="product-card">
-              <div class="satelite-img"></div>
-              <h3 class="card-header">Chitta Network</h3>
-              <h4 class="card-content">
-                Use whatsapp to get your farm verified using our smart satellite
-                network, which later generates a proof certificate that can be
-                use to avail loan or purchase insurance.
-              </h4>
-              <button class="explore-btn">Explore</button>
-            </div>
+          <div class="product-card">
+            <div class="satelite-img"></div>
+            <h3 class="card-header">Chitta Network</h3>
+            <h4 class="card-content">
+              Use whatsapp to get your farm verified using our smart satellite
+              network, which later generates a proof certificate that can be use
+              to avail loan or purchase insurance.
+            </h4>
+            <button class="explore-btn">Explore</button>
           </div>
         </div>
       </div>
@@ -131,14 +161,18 @@
             <div class="carousel-item active">
               <div class="carousal-container">
                 <p class="carousal-header">Management Information System</p>
-                <img src="./images/carousal/CarousalImg1.jpg" alt="" />
+                <img
+                  src="./images/carousal/CarousalImg1.jpg"
+                  class="carousal-img"
+                  alt=""
+                />
                 <p class="carousal-sub-text">
                   FPOs have potential to act as a catalyst of change in economic
                   system of our country. FPOs can perform as expected, only when
                   its <br />
                   management systems are strong.
                 </p>
-                <ul class="features-container">
+                <ul class="features-container" style="padding-left: 0">
                   <li>
                     <img src="./images/carousal/carousal1-1.svg" alt="" />
                     Custom Dashboard
@@ -165,7 +199,11 @@
             <div class="carousel-item">
               <div class="carousal-container">
                 <p class="carousal-header">Point Of Sale System</p>
-                <img src="./images/carousal/CarousalImg2.jpg" alt="" />
+                <img
+                  class="carousal-img"
+                  src="./images/carousal/CarousalImg2.jpg"
+                  alt=""
+                />
                 <p class="carousal-sub-text">
                   Create your product, add brands,categories, groups, units,
                   variant attributes. Keep detailed track of your sales and
@@ -195,7 +233,11 @@
             <div class="carousel-item">
               <div class="carousal-container">
                 <p class="carousal-header">Chitta Network</p>
-                <img src="./images/carousal/CarousalImg3.png" alt="" />
+                <img
+                  class="carousal-img"
+                  src="./images/carousal/CarousalImg3.png"
+                  alt=""
+                />
                 <p class="carousal-sub-text">
                   The Chitta stack offers radical new services for both farmers,
                   traders and wholesale entities in the agri-chain. As well as
@@ -224,6 +266,7 @@
               </div>
             </div>
           </div>
+
           <button
             class="carousel-control-prev"
             type="button"
