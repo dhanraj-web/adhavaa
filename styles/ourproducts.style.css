@@ -106,6 +106,8 @@
 
 .product-card .mis-img {
   background-image: url(../images/mis.svg);
+  height: 10rem;
+  width: 10rem;
 }
 
 .product-card:hover .mis-img {
