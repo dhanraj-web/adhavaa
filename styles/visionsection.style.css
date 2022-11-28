@@ -21,7 +21,6 @@
 }
 
 .ourvision-container {
-  /* height: 61rem; */
   width: 111.125rem;
   background-color: #fe912a0d;
   border-radius: 5rem;
@@ -32,13 +31,12 @@
   align-items: center;
   justify-content: space-around;
   max-width: 114.5625rem;
-  position: relative;
-  margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
   .ourvision-container {
     padding: 2.5rem;
+    border-radius: 2rem;
   }
 }
 
@@ -48,4 +46,37 @@
   display: flex;
   justify-content: flex-end;
   gap: 2.75rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .ourvision-wrapper {
+    height: 100%;
+    padding: 4.375rem;
+  }
+
+  .ourvision-title-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .ourvision-content-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .ourvision-wrapper {
+    padding: 2rem;
+  }
+  .ourvision-container img {
+    height: 10rem;
+  }
+  .ourvision-container {
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .svg-wrapper img {
+    height: 5rem;
+  }
+  .svg-wrapper {
+    height: 5rem;
+  }
 }
