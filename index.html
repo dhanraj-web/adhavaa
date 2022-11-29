@@ -31,14 +31,9 @@
   </head>
   <body>
     <!-- Header   -->
-    <div class="header-wrapper">
+    <header class="header-wrapper">
       <nav class="header-container">
         <img src="./images/AdhavaMainLogo.svg" alt="adhava logo" id="logo1" />
-        <!-- <img
-          src="./images/AdhavaaMobileLogo.svg"
-          alt="adhava logo mobile"
-          id="logo2"
-        /> -->
         <div class="nav-bar">
           <a class="active" href="index.html">Home</a>
           <a>Marketplace</a>
@@ -56,6 +51,39 @@
           <img src="./images/burgermenu-icon.svg" alt="" />
         </button>
       </nav>
+
+      <!-- Banner   -->
+      <div class="banner-wrapper">
+        <div class="banner-container">
+          <div class="banner">
+            <div class="banner-content-container">
+              <p class="banner-title">
+                Know your <span class="banner-bold-text">farmer</span>, know
+                your
+                <span class="banner-bold-text">food.</span>
+                <br />
+                Directly from our
+                <span class="banner-orange-text"> mother nature.</span>
+              </p>
+              <p class="banner-sub-title">
+                Community which believes in providing 100% fresh organic food
+                directly from farm to you. We <br />
+                are able to do so because of our open network of farmers joined
+                via FPO’s.
+              </p>
+              <div class="input-container">
+                <input
+                  type="email"
+                  class="custom-input"
+                  placeholder="type your mail here..."
+                />
+                <button class="subscribe-btn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="mobile-nav" id="mobile-nav">
         <div class="mobile-nav-container">
           <button onclick="hideNav()" class="close-btn">
@@ -68,253 +96,229 @@
           <a href="#">About Us</a>
         </div>
       </div>
-    </div>
+    </header>
 
-    <!-- Banner   -->
-    <div class="banner-wrapper">
-      <div class="banner-container">
-        <div class="banner">
-          <div class="banner-content-container">
-            <p class="banner-title">
-              Know your <span class="banner-bold-text">farmer</span>, know your
-              <span class="banner-bold-text">food.</span>
+    <div class="main-section-wrapper">
+      <section class="main-section">
+        <!-- our products  -->
+        <div class="our-products-wrapper">
+          <div class="our-products-container">
+            <p class="title-text">Our products</p>
+            <p class="subtitle-text">
+              Explore wide range of tools for your FPO.
+            </p>
+            <p class="content-text">
+              We cover all aspects of farming by using technology as our primary
+              weapon. We are in a mission to bring farmers the appreciation that
               <br />
-              Directly from our
-              <span class="banner-orange-text"> mother nature.</span>
+              they deserve. Our tools are robust as well as adaptive to most
+              FPO’s out there. Join us, on our mission and be part of Adhavaa.
             </p>
-            <p class="banner-sub-title">
-              Community which believes in providing 100% fresh organic food
-              directly from farm to you. We <br />
-              are able to do so because of our open network of farmers joined
-              via FPO’s.
+
+            <div class="product-cards-container">
+              <div class="product-card">
+                <div class="mis-img"></div>
+                <h3 class="card-header">Management Information System</h3>
+                <h4 class="card-content">
+                  FPOs are in dire need of gearing up its data related
+                  management systems, all that happens in field, market, storage
+                  area, and in meetings should be recorded properly.
+                </h4>
+                <button class="explore-btn">Explore</button>
+              </div>
+
+              <div class="product-card">
+                <div class="pos-img"></div>
+                <h3 class="card-header">Point of Sale System</h3>
+                <h4 class="card-content">
+                  POS is the easiest way to Sale and Purchase as well as
+                  managing Stock. Adhavaa POS has powerful features to manage
+                  products, sales, purchase and manage inventory.
+                </h4>
+                <button class="explore-btn">Explore</button>
+              </div>
+
+              <div class="product-card">
+                <div class="satelite-img"></div>
+                <h3 class="card-header">Chitta Network</h3>
+                <h4 class="card-content">
+                  Use whatsapp to get your farm verified using our smart
+                  satellite network, which later generates a proof certificate
+                  that can be use to avail loan or purchase insurance.
+                </h4>
+                <button class="explore-btn">Explore</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Management Information System -->
+        <div class="management-wrapper">
+          <div class="management-container">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousal-container">
+                    <p class="carousal-header">Management Information System</p>
+                    <img
+                      src="./images/carousal/CarousalImg1.jpg"
+                      class="carousal-img"
+                      alt=""
+                    />
+                    <p class="carousal-sub-text">
+                      FPOs have potential to act as a catalyst of change in
+                      economic system of our country. FPOs can perform as
+                      expected, only when its <br />
+                      management systems are strong.
+                    </p>
+                    <ul class="features-container" style="padding-left: 0">
+                      <li>
+                        <img src="./images/carousal/carousal1-1.svg" alt="" />
+                        Custom Dashboard
+                      </li>
+                      <li>
+                        <img src="./images/carousal/carousal1-2.svg" alt="" />
+                        Board Resolution
+                      </li>
+                      <li>
+                        <img src="./images/carousal/carousal1-3.svg" alt="" />
+                        ID Card Generation
+                      </li>
+                      <li>
+                        <img src="./images/carousal/carousal1-4.svg" alt="" />
+                        Share Certificate
+                      </li>
+                    </ul>
+                    <button class="view-plans-btn">
+                      View Plans
+                      <img src="./images/OpenLink.svg" alt="open link icon" />
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousal-container">
+                    <p class="carousal-header">Point Of Sale System</p>
+                    <img
+                      class="carousal-img"
+                      src="./images/carousal/CarousalImg2.jpg"
+                      alt=""
+                    />
+                    <p class="carousal-sub-text">
+                      Create your product, add brands,categories, groups, units,
+                      variant attributes. Keep detailed track of your sales and
+                      purchases<br />
+                      along with the profit.
+                    </p>
+                    <ul class="features-container">
+                      <li>
+                        <img src="./images/carousal/Carousal2-1.svg" alt="" />
+                        Inventory
+                      </li>
+                      <li>
+                        <img src="./images/carousal/Carousal2-2.svg" alt="" />
+                        Invoice
+                      </li>
+                      <li>
+                        <img src="./images/carousal/Carousal2-3.svg" alt="" />
+                        Dashboard
+                      </li>
+                    </ul>
+                    <button class="view-plans-btn">
+                      View Plans
+                      <img src="./images/OpenLink.svg" alt="open link icon" />
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousal-container">
+                    <p class="carousal-header">Chitta Network</p>
+                    <img
+                      class="carousal-img"
+                      src="./images/carousal/CarousalImg3.png"
+                      alt=""
+                    />
+                    <p class="carousal-sub-text">
+                      The Chitta stack offers radical new services for both
+                      farmers, traders and wholesale entities in the agri-chain.
+                      As well as for<br />
+                      supporting institutions such as governments, NGOs,
+                      insurance companies and banks.
+                    </p>
+                    <ul class="features-container">
+                      <li>
+                        <img src="./images/carousal/Carousal3-1.svg" alt="" />
+                        Supports Whatsapp
+                      </li>
+                      <li>
+                        <img src="./images/carousal/Carousal3-2.svg" alt="" />
+                        Land Certificate
+                      </li>
+                      <li>
+                        <img src="./images/carousal/Carousal3-3.svg" alt="" />
+                        Score Card
+                      </li>
+                    </ul>
+                    <button class="view-plans-btn">
+                      View Plans
+                      <img src="./images/OpenLink.svg" alt="open link icon" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span aria-hidden="true">
+                  <img src="./images/carousal/CarousalPrev.svg" alt="" />
+                </span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span aria-hidden="true">
+                  <img src="./images/carousal/CarousalNext.svg" alt="" />
+                </span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Values and Vision -->
+        <div class="ourvision-wrapper">
+          <div class="ourvision-container">
+            <p class="ourvision-title-text">Our Values and Vision</p>
+            <img src="./images/BulbImg.svg" alt="our vision image" />
+            <p class="ourvision-content-text">
+              In the recent years, the farmers had various farmer associations
+              among them to help financially and tried to get the awareness of
+              the Government subsidies. Adhavaa is the extension of their effort
+              to get connected to local, regional, national and global market.
+              Our team is passionate to putting new technologies into use,
+              establishing Agri-based solutions, and connecting with farmers.
+              The implementation of a blockchain-based Agri solution to several
+              FPOs in Tamil Nadu is now being done in collaboration with TNAU
+              officials.
             </p>
-            <div class="input-container">
-              <input
-                type="email"
-                class="custom-input"
-                placeholder="type your mail here..."
-              />
-              <button class="subscribe-btn">Subscribe</button>
+            <div class="svg-wrapper">
+              <img src="./images/OurvisionSvg.svg" alt="" />
+              <img src="./images/OurvisionSvg.svg" alt="" />
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- our products  -->
-    <div class="our-products-wrapper">
-      <div class="our-products-container">
-        <p class="title-text">Our products</p>
-        <p class="subtitle-text">Explore wide range of tools for your FPO.</p>
-        <p class="content-text">
-          We cover all aspects of farming by using technology as our primary
-          weapon. We are in a mission to bring farmers the appreciation that
-          <br />
-          they deserve. Our tools are robust as well as adaptive to most FPO’s
-          out there. Join us, on our mission and be part of Adhavaa.
-        </p>
-
-        <div class="product-cards-container">
-          <div class="product-card">
-            <div class="mis-img"></div>
-            <h3 class="card-header">Management Information System</h3>
-            <h4 class="card-content">
-              FPOs are in dire need of gearing up its data related management
-              systems, all that happens in field, market, storage area, and in
-              meetings should be recorded properly.
-            </h4>
-            <button class="explore-btn">Explore</button>
-          </div>
-
-          <div class="product-card">
-            <div class="pos-img"></div>
-            <h3 class="card-header">Point of Sale System</h3>
-            <h4 class="card-content">
-              POS is the easiest way to Sale and Purchase as well as managing
-              Stock. Adhavaa POS has powerful features to manage products,
-              sales, purchase and manage inventory.
-            </h4>
-            <button class="explore-btn">Explore</button>
-          </div>
-
-          <div class="product-card">
-            <div class="satelite-img"></div>
-            <h3 class="card-header">Chitta Network</h3>
-            <h4 class="card-content">
-              Use whatsapp to get your farm verified using our smart satellite
-              network, which later generates a proof certificate that can be use
-              to avail loan or purchase insurance.
-            </h4>
-            <button class="explore-btn">Explore</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Management Information System -->
-    <div class="management-wrapper">
-      <div class="management-container">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carousal-container">
-                <p class="carousal-header">Management Information System</p>
-                <img
-                  src="./images/carousal/CarousalImg1.jpg"
-                  class="carousal-img"
-                  alt=""
-                />
-                <p class="carousal-sub-text">
-                  FPOs have potential to act as a catalyst of change in economic
-                  system of our country. FPOs can perform as expected, only when
-                  its <br />
-                  management systems are strong.
-                </p>
-                <ul class="features-container" style="padding-left: 0">
-                  <li>
-                    <img src="./images/carousal/carousal1-1.svg" alt="" />
-                    Custom Dashboard
-                  </li>
-                  <li>
-                    <img src="./images/carousal/carousal1-2.svg" alt="" />
-                    Board Resolution
-                  </li>
-                  <li>
-                    <img src="./images/carousal/carousal1-3.svg" alt="" />
-                    ID Card Generation
-                  </li>
-                  <li>
-                    <img src="./images/carousal/carousal1-4.svg" alt="" />
-                    Share Certificate
-                  </li>
-                </ul>
-                <button class="view-plans-btn">
-                  View Plans
-                  <img src="./images/OpenLink.svg" alt="open link icon" />
-                </button>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousal-container">
-                <p class="carousal-header">Point Of Sale System</p>
-                <img
-                  class="carousal-img"
-                  src="./images/carousal/CarousalImg2.jpg"
-                  alt=""
-                />
-                <p class="carousal-sub-text">
-                  Create your product, add brands,categories, groups, units,
-                  variant attributes. Keep detailed track of your sales and
-                  purchases<br />
-                  along with the profit.
-                </p>
-                <ul class="features-container">
-                  <li>
-                    <img src="./images/carousal/Carousal2-1.svg" alt="" />
-                    Inventory
-                  </li>
-                  <li>
-                    <img src="./images/carousal/Carousal2-2.svg" alt="" />
-                    Invoice
-                  </li>
-                  <li>
-                    <img src="./images/carousal/Carousal2-3.svg" alt="" />
-                    Dashboard
-                  </li>
-                </ul>
-                <button class="view-plans-btn">
-                  View Plans
-                  <img src="./images/OpenLink.svg" alt="open link icon" />
-                </button>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousal-container">
-                <p class="carousal-header">Chitta Network</p>
-                <img
-                  class="carousal-img"
-                  src="./images/carousal/CarousalImg3.png"
-                  alt=""
-                />
-                <p class="carousal-sub-text">
-                  The Chitta stack offers radical new services for both farmers,
-                  traders and wholesale entities in the agri-chain. As well as
-                  for<br />
-                  supporting institutions such as governments, NGOs, insurance
-                  companies and banks.
-                </p>
-                <ul class="features-container">
-                  <li>
-                    <img src="./images/carousal/Carousal3-1.svg" alt="" />
-                    Supports Whatsapp
-                  </li>
-                  <li>
-                    <img src="./images/carousal/Carousal3-2.svg" alt="" />
-                    Land Certificate
-                  </li>
-                  <li>
-                    <img src="./images/carousal/Carousal3-3.svg" alt="" />
-                    Score Card
-                  </li>
-                </ul>
-                <button class="view-plans-btn">
-                  View Plans
-                  <img src="./images/OpenLink.svg" alt="open link icon" />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span aria-hidden="true">
-              <img src="./images/carousal/CarousalPrev.svg" alt="" />
-            </span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span aria-hidden="true">
-              <img src="./images/carousal/CarousalNext.svg" alt="" />
-            </span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Our Values and Vision -->
-    <div class="ourvision-wrapper">
-      <div class="ourvision-container">
-        <p class="ourvision-title-text">Our Values and Vision</p>
-        <img src="./images/BulbImg.svg" alt="our vision image" />
-        <p class="ourvision-content-text">
-          In the recent years, the farmers had various farmer associations among
-          them to help financially and tried to get the awareness of the
-          Government subsidies. Adhavaa is the extension of their effort to get
-          connected to local, regional, national and global market. Our team is
-          passionate to putting new technologies into use, establishing
-          Agri-based solutions, and connecting with farmers. The implementation
-          of a blockchain-based Agri solution to several FPOs in Tamil Nadu is
-          now being done in collaboration with TNAU officials.
-        </p>
-        <div class="svg-wrapper">
-          <img src="./images/OurvisionSvg.svg" alt="" />
-          <img src="./images/OurvisionSvg.svg" alt="" />
-        </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>
