@@ -5,6 +5,7 @@
 @import "./ourproducts.style.css";
 @import "./carousalsection.style.css";
 @import "./visionsection.style.css";
+@import "./marketplace.css";
 
 * {
   padding: 0;

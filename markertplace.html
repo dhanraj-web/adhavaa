@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Adhavaa</title>
+  </head>
+
+  <body>
+    <div id="marketplace-container">
+      <div id="marketplace-top-section">
+        <p id="marketplace-title">What to expect?</p>
+        <div id="marketplace-card-container">
+          <img class="image" src="/adhavaa/images/farmer.svg" alt="farmer" />
+          <div id="card-container">
+            <p class="card-id">01</p>
+            <div class="card">
+              <div class="card-tag-fold"></div>
+              <div class="tag"><p class="tag-title">Catalog</p></div>
+              <div class="card-body">
+                <p class="header">FPO and Product</p>
+                <p class="content">
+                  Choose from our wide network of verified FPOs and their
+                  organic products. Everything in few clicks.
+                </p>
+              </div>
+            </div>
+            <div class="icon-box">
+              <img
+                class="icon"
+                src="/adhavaa/images/catalog.svg"
+                alt="catalog-icon"
+              />
+            </div>
+          </div>
+          <img
+            class="image"
+            src="/adhavaa/images/tractor-plowing.svg"
+            alt="tractor-plowing"
+          />
+          <div id="card-container">
+            <p class="card-id">02</p>
+            <div class="card">
+              <div class="tag-fold"></div>
+              <div class="tag"><p class="tag-title">Scan QR</p></div>
+              <div class="card-body">
+                <p class="header">Check Authenticity</p>
+                <p class="content">
+                  Scan the product or the FPO to verify the integrity and
+                  authenticity of the product. We provide only the best.
+                </p>
+              </div>
+            </div>
+            <div class="icon-box">
+              <img
+                class="icon"
+                src="/adhavaa/images/qr-scan.svg"
+                alt="qr-scan-icon"
+              />
+            </div>
+          </div>
+          <img
+            class="image"
+            src="/adhavaa/images/farmer-barn.svg"
+            alt="farmer-barn"
+          />
+          <div id="card-container">
+            <p class="card-id">03</p>
+            <div class="card">
+              <div class="tag-fold"></div>
+              <div class="tag"><p class="tag-title">Purchase</p></div>
+              <div class="card-body">
+                <p class="header">Payment and Delivery</p>
+                <p class="content">
+                  Purchase products from your favorite FPOs and expect delivery
+                  on time. Hassel free service.
+                </p>
+              </div>
+            </div>
+            <div class="icon-box">
+              <img
+                class="icon"
+                src="/adhavaa/images/purchase.svg"
+                alt="purchase-icon"
+              />
+            </div>
+          </div>
+          <img class="image" src="/adhavaa/images/truck.svg" alt="truck" />
+          <div id="card-container">
+            <p class="card-id">04</p>
+            <div class="card">
+              <div class="tag-fold"></div>
+              <div class="tag"><p class="tag-title">Community</p></div>
+              <div class="card-body">
+                <p class="header">Join Us</p>
+                <p class="content">
+                  Be part of us by contributing earlier in the farming stage by
+                  paying half, making you our priority one customer.
+                </p>
+              </div>
+            </div>
+            <div class="icon-box">
+              <img
+                class="icon"
+                src="/adhavaa/images/community.svg"
+                alt="community-icon"
+              />
+            </div>
+          </div>
+          <div class="consumer-image">
+            <img
+              class="image custom-image"
+              src="/adhavaa/images/consumer-left.svg"
+              alt="consumer-left"
+            />
+            <img
+              class="image custom-image"
+              src="/adhavaa/images/consumer-right.svg"
+              alt="consumer-right"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="marketplace-bottom-section">
+        <p class="footer-content">Coming soon to your <b>door step...</b></p>
+        <a href="index.html">
+          <button class="marketplace-button">Back</button>
+        </a>
+      </div>
+    </div>
+    <script>
+      var theme = window.localStorage.getItem("theme");
+      if (theme === "dark") {
+        document.body.classList.add("dark-theme");
+      }
+    </script>
+  </body>
+</html>

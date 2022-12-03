@@ -1,0 +1,263 @@
+#marketplace-container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1.4fr 1fr;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: var(--white);
+}
+
+#marketplace-header-title {
+  margin: 0;
+  font-size: 3.2rem;
+  padding: 2.5% 0;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+#marketplace-card-container {
+  display: grid;
+  grid-template-areas: "shadow1 card1 shadow2 card2 shadow3 card3 shadow4 card4 shadow5";
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.shadow-image {
+  align-self: flex-end;
+  display: none;
+}
+#consumer-shadow-image {
+  display: none;
+  align-self: flex-end;
+  gap: 0.5rem;
+}
+#card-container {
+  height: 100%;
+  /* width: 21rem; */
+}
+
+/* created grid area for shadow-image and card */
+.shadow-image:first-of-type {
+  grid-area: shadow1;
+}
+.shadow-image:nth-of-type(2) {
+  grid-area: shadow2;
+}
+.shadow-image:nth-of-type(3) {
+  grid-area: shadow3;
+}
+.shadow-image:nth-of-type(4) {
+  grid-area: shadow4;
+}
+#consumer-shadow-image {
+  grid-area: shadow5;
+}
+#card-container:first-of-type {
+  grid-area: card1;
+}
+#card-container:nth-of-type(2) {
+  grid-area: card2;
+}
+#card-container:nth-of-type(3) {
+  grid-area: card3;
+}
+#card-container:nth-of-type(4) {
+  grid-area: card4;
+}
+.marketplace-card {
+  padding: 1rem;
+  border-radius: 2rem;
+  position: relative;
+  background-color: var(--white-secondary);
+  box-shadow: 0.5rem 0rem 1rem -5px var(--shadow);
+  height: 80%;
+  min-height: 20rem;
+}
+
+.tag-fold {
+  width: 84%;
+  height: 1.6rem;
+  background-color: var(--tag-fold);
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  position: absolute;
+  z-index: 3;
+  top: -1.5rem;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto;
+}
+
+.tag {
+  background-color: var(--secondary);
+  width: 67%;
+  height: 5rem;
+  position: absolute;
+  z-index: 4;
+  top: -1.5rem;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  /* clip-path: polygon(50% 0%, 100% 0, 100% 0, 100% 70%, 76% 89%, 46% 91%, 20% 86%, 0% 70%, 0 0, 0 0); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag-title {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.card-id {
+  color: var(--number);
+  font-size: 15rem;
+  font-weight: 500;
+  font-family: "League Gothic", sans-serif;
+  line-height: 11rem;
+  margin: 0%;
+}
+
+.card-body {
+  height: 100%;
+  min-height: 20rem;
+  border: 0.4rem solid var(--secondary);
+  border-radius: 1.5rem;
+}
+
+.marketplace-icon-box {
+  width: 12rem;
+  height: 12rem;
+  background-color: var(--white);
+  border: 0.875rem solid var(--secondary);
+  border-radius: 50%;
+  padding: 2rem;
+  z-index: 5;
+  position: absolute;
+  bottom: -25%;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto;
+  /* transform: translate(0, -40%); */
+  box-shadow: 0.5rem 0rem 2rem -5px var(--shadow);
+}
+
+.header {
+  padding-top: 20%;
+  padding-bottom: 10%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--black);
+}
+.content {
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* .marketplace-bottom styles */
+#marketplace-footer-container {
+  min-height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    var(--gradient-primary-1),
+    var(--gradient-primary-2)
+  );
+}
+.marketplace-footer-content {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+.marketplace-button {
+  margin: 2.75rem;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  background-color: transparent;
+  border-radius: 0.8rem;
+  border: 1px solid var(--text-primary);
+}
+.marketplace-button:hover {
+  cursor: pointer;
+  color: var(--primary);
+  background-color: var(--white);
+}
+
+@media screen and (width >= 1920px) {
+  #marketplace-card-container {
+    gap: 1%;
+    padding: 0 1.5rem;
+  }
+  .shadow-image {
+    display: block;
+  }
+  #consumer-shadow-image {
+    display: flex;
+  }
+  #card-container {
+    min-width: 20rem;
+    max-width: 23rem;
+  }
+}
+
+@media screen and (width < 1920px) {
+  #marketplace-card-container {
+    gap: 2%;
+    padding: 0 1.5%;
+    grid-template-areas: "card1 card2 card3 card4";
+  }
+  #card-container {
+    min-width: 19rem;
+    max-width: 23rem;
+  }
+}
+
+@media screen and (width < 1440px) {
+  #marketplace-card-container {
+    background-color: var(--white);
+    gap: 2%;
+    row-gap: 14rem;
+    /* padding: 0 1%; */
+    grid-template-areas:
+      "card1 card2 card3"
+      ". card4 .";
+  }
+  #card-container {
+    min-width: 15rem;
+    max-width: 23rem;
+  }
+}
+
+@media screen and (width <= 1024px) {
+  #marketplace-header-title {
+    font-size: 2.5rem;
+  }
+  #marketplace-card-container {
+    gap: 5rem;
+    row-gap: 14rem;
+    padding: 0 3rem;
+    grid-template-areas:
+      "card1 card2 "
+      "card3 card4";
+  }
+}
+@media screen and (width <= 786px) {
+  #marketplace-header-title {
+    font-size: 2rem;
+  }
+  #marketplace-card-container {
+    row-gap: 14rem;
+    padding: 0;
+    grid-template-areas:
+      "card1"
+      "card2 "
+      "card3"
+      "card4";
+  }
+  #card-container {
+    max-width: 20rem;
+  }
+}

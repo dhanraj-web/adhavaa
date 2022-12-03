@@ -45,6 +45,7 @@
   font-size: 3rem;
   line-height: 5.125rem;
   text-align: center;
+  color: var(--text-main);
 }
 
 .banner-sub-title {
@@ -52,6 +53,7 @@
   font-size: 1.125rem;
   line-height: 1.9375rem;
   text-align: center;
+  color: var(--text-main);
 }
 
 .input-container {
@@ -60,7 +62,7 @@
 }
 
 .custom-input {
-  background: var(--white);
+  background: var(--white-constant);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0.625rem;
   border: none;
@@ -76,11 +78,11 @@
 .subscribe-btn {
   height: 3.5rem;
   width: 11.9375rem;
-  background: var(--primary);
+  background: var(--white);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0.625rem;
-  border: none;
-  color: var(--white);
+  border: 0.1rem solid var(--white-constant);
+  color: var(--primary);
   font-weight: 500;
   font-size: 1.125rem;
   cursor: pointer;

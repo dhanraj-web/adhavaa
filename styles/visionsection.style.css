@@ -1,10 +1,13 @@
 .ourvision-wrapper {
   width: 100%;
   color: var(--primary);
+  background-color: var(--white);
   display: flex;
   justify-content: center;
   height: 67.5rem;
   padding: 4.375rem;
+  position: relative;
+  z-index: -1;
 }
 
 .ourvision-title-text {
@@ -31,6 +34,8 @@
   align-items: center;
   justify-content: space-around;
   max-width: 114.5625rem;
+  position: relative;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 768px) {

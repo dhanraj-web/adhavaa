@@ -29,6 +29,7 @@
   font-size: 2.75rem;
   font-weight: 500;
   margin: 1.875rem 0;
+  color: var(--text-secondary);
 }
 
 .content-text {
@@ -37,12 +38,14 @@
   text-align: center;
   line-height: 2rem;
   padding: 0 2rem;
+  color: var(--text-secondary);
 }
 
 .card-header {
   font-weight: 600;
   font-size: 1.5rem;
   text-align: center;
+  color: var(--black) !important;
 }
 
 .card-content {
@@ -50,6 +53,7 @@
   font-size: 1.25rem;
   line-height: 1.875rem;
   text-align: center;
+  color: var(--black);
 }
 
 .product-cards-container {
