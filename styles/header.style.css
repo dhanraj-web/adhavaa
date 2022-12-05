@@ -23,6 +23,18 @@
   font-weight: 600;
 }
 
+.nav-bar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+#theme-icon-btn {
+  border: none;
+  background-color: transparent;
+}
+
 .mobile-nav {
   position: absolute;
   width: 100vw;

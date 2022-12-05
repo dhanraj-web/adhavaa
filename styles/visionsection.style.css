@@ -1,10 +1,13 @@
 .ourvision-wrapper {
   width: 100%;
-  color: var(--primary);
+  color: var(--text-heading);
+  background-color: var(--white-primary);
   display: flex;
   justify-content: center;
   height: 67.5rem;
   padding: 4.375rem;
+  position: relative;
+  z-index: -1;
 }
 
 .ourvision-title-text {
@@ -22,7 +25,7 @@
 
 .ourvision-container {
   width: 111.125rem;
-  background-color: #fe912a0d;
+  background-color: var(--background-primary);
   border-radius: 5rem;
   margin-bottom: 3.25rem;
   padding: 5rem 13rem;
@@ -31,6 +34,8 @@
   align-items: center;
   justify-content: space-around;
   max-width: 114.5625rem;
+  position: relative;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 768px) {
