@@ -4,8 +4,8 @@
   padding-top: 23.75rem;
   background: linear-gradient(
     180deg,
-    #fff6ec 0%,
-    rgba(255, 246, 237, 0.2) 100%
+    var(--gradient-secondary-1) 0%,
+    var(--gradient-secondary-2) 100%
   );
 }
 
@@ -20,7 +20,7 @@
 }
 
 .title-text {
-  color: var(--secondary);
+  color: var(--text-secondary);
   font-size: 2rem;
   font-weight: 700;
 }
@@ -29,7 +29,7 @@
   font-size: 2.75rem;
   font-weight: 500;
   margin: 1.875rem 0;
-  color: var(--text-secondary);
+  color: var(--black);
 }
 
 .content-text {
@@ -38,14 +38,14 @@
   text-align: center;
   line-height: 2rem;
   padding: 0 2rem;
-  color: var(--text-secondary);
+  color: var(--black);
 }
 
 .card-header {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   text-align: center;
-  color: var(--black) !important;
+  /* color: var(--black); */
 }
 
 .card-content {
@@ -53,7 +53,7 @@
   font-size: 1.25rem;
   line-height: 1.875rem;
   text-align: center;
-  color: var(--black);
+  /* color: var(--black); */
 }
 
 .product-cards-container {
@@ -63,6 +63,7 @@
   justify-content: center;
   gap: 3.125rem;
   /* margin: 6.25rem 0; */
+  margin: 4rem 0;
 }
 
 .product-card {
@@ -70,13 +71,15 @@
   height: 38.125rem;
 
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-  border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 1.25rem;
+  border: 0.3rem solid var(--white-constant);
+  border-radius: 0.8rem;
   background-color: var(--white);
+  color: var(--black);
 }
 
 .product-card:hover {
@@ -85,14 +88,15 @@
     #fe912a 0%,
     #ffad5f 100%
   );
+  border: none;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
   cursor: pointer;
-  color: var(--white);
+  color: var(--white-constant);
 }
 
 .product-card .explore-btn {
-  color: var(--main-bg);
-  background-color: var(--secondary);
+  color: var(--white-constant);
+  background-color: var(--secondary-constant);
   font-weight: 600;
   font-size: 1rem;
   height: 2.75rem;
@@ -104,8 +108,8 @@
 }
 
 .product-card:hover .explore-btn {
-  color: var(--secondary);
-  background-color: var(--main-bg);
+  color: var(--secondary-constant);
+  background-color: var(--white-constant);
 }
 
 .product-card .mis-img {
@@ -115,7 +119,7 @@
 }
 
 .product-card:hover .mis-img {
-  background-image: url(../images/mis-white.svg);
+  background-image: url(../images/mis-dark.svg);
   height: 10rem;
   width: 10rem;
 }
@@ -126,7 +130,7 @@
 }
 
 .product-card:hover .pos-img {
-  background-image: url(../images/pos-white.svg);
+  background-image: url(../images/pos-dark.svg);
   height: 10rem;
   width: 10rem;
 }
@@ -137,7 +141,7 @@
 }
 
 .product-card:hover .satelite-img {
-  background-image: url(../images/chitta-satellite-white.svg);
+  background-image: url(../images/chitta-satellite-dark.svg);
   height: 10rem;
   width: 10rem;
 }

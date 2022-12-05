@@ -50,10 +50,17 @@
           <a href="#">Our Products</a>
           <a href="#">FPO's</a>
           <a href="#">About Us</a>
-          <label class="switch">
+          <button id="theme-icon-btn">
+            <img
+              id="theme-icon"
+              src="./images/darkModeIcon.svg"
+              alt="darkModeIcon"
+            />
+          </button>
+          <!-- <label class="switch">
             <input type="checkbox" id="checkbox" />
             <span class="slider round"></span>
-          </label>
+          </label> -->
         </div>
         <!-- <div style="display: flex; align-items: center; gap: 1.5rem">
           <div class="launchContainer" id="launchContainer">
@@ -173,9 +180,9 @@
               <div class="carousal-container">
                 <p class="carousal-header">Management Information System</p>
                 <img
-                  src="./images/carousal/CarousalImg1.jpg"
+                  id="carousal-mis"
                   class="carousal-img"
-                  alt=""
+                  src="./images/carousal/CarousalImg1.png"
                 />
                 <p class="carousal-sub-text">
                   FPOs have potential to act as a catalyst of change in economic
@@ -185,19 +192,35 @@
                 </p>
                 <ul class="features-container" style="padding-left: 0">
                   <li>
-                    <img src="./images/carousal/carousal1-1.svg" alt="" />
+                    <img
+                      id="custom-dashboard"
+                      src="./images/carousal/carousal1-1.svg"
+                      alt=""
+                    />
                     Custom Dashboard
                   </li>
                   <li>
-                    <img src="./images/carousal/carousal1-2.svg" alt="" />
+                    <img
+                      id="board-resolution"
+                      src="./images/carousal/carousal1-2.svg"
+                      alt=""
+                    />
                     Board Resolution
                   </li>
                   <li>
-                    <img src="./images/carousal/carousal1-3.svg" alt="" />
+                    <img
+                      id="id-card-generation"
+                      src="./images/carousal/carousal1-3.svg"
+                      alt=""
+                    />
                     ID Card Generation
                   </li>
                   <li>
-                    <img src="./images/carousal/carousal1-4.svg" alt="" />
+                    <img
+                      id="share-certificate"
+                      src="./images/carousal/carousal1-4.svg"
+                      alt=""
+                    />
                     Share Certificate
                   </li>
                 </ul>
@@ -211,8 +234,9 @@
               <div class="carousal-container">
                 <p class="carousal-header">Point Of Sale System</p>
                 <img
+                  id="carousal-pos"
                   class="carousal-img"
-                  src="./images/carousal/CarousalImg2.jpg"
+                  src="./images/carousal/CarousalImg2.png"
                   alt=""
                 />
                 <p class="carousal-sub-text">
@@ -223,15 +247,27 @@
                 </p>
                 <ul class="features-container">
                   <li>
-                    <img src="./images/carousal/Carousal2-1.svg" alt="" />
+                    <img
+                      id="inventory"
+                      src="./images/carousal/Carousal2-1.svg"
+                      alt=""
+                    />
                     Inventory
                   </li>
                   <li>
-                    <img src="./images/carousal/Carousal2-2.svg" alt="" />
+                    <img
+                      id="invoice"
+                      src="./images/carousal/Carousal2-2.svg"
+                      alt=""
+                    />
                     Invoice
                   </li>
                   <li>
-                    <img src="./images/carousal/Carousal2-3.svg" alt="" />
+                    <img
+                      id="dashboard"
+                      src="./images/carousal/Carousal2-3.svg"
+                      alt=""
+                    />
                     Dashboard
                   </li>
                 </ul>
@@ -245,6 +281,7 @@
               <div class="carousal-container">
                 <p class="carousal-header">Chitta Network</p>
                 <img
+                  id="carousal-satellite"
                   class="carousal-img"
                   src="./images/carousal/CarousalImg3.png"
                   alt=""
@@ -258,15 +295,27 @@
                 </p>
                 <ul class="features-container">
                   <li>
-                    <img src="./images/carousal/Carousal3-1.svg" alt="" />
+                    <img
+                      id="support-whatsapp"
+                      src="./images/carousal/Carousal3-1.svg"
+                      alt=""
+                    />
                     Supports Whatsapp
                   </li>
                   <li>
-                    <img src="./images/carousal/Carousal3-2.svg" alt="" />
+                    <img
+                      id="land-certificate"
+                      src="./images/carousal/Carousal3-2.svg"
+                      alt=""
+                    />
                     Land Certificate
                   </li>
                   <li>
-                    <img src="./images/carousal/Carousal3-3.svg" alt="" />
+                    <img
+                      id="score-card"
+                      src="./images/carousal/Carousal3-3.svg"
+                      alt=""
+                    />
                     Score Card
                   </li>
                 </ul>
@@ -285,7 +334,11 @@
             data-bs-slide="prev"
           >
             <span aria-hidden="true">
-              <img src="./images/carousal/CarousalPrev.svg" alt="" />
+              <img
+                id="carousal-prev"
+                src="./images/carousal/CarousalPrev.svg"
+                alt=""
+              />
             </span>
             <span class="visually-hidden">Previous</span>
           </button>
@@ -296,7 +349,11 @@
             data-bs-slide="next"
           >
             <span aria-hidden="true">
-              <img src="./images/carousal/CarousalNext.svg" alt="" />
+              <img
+                id="carousal-next"
+                src="./images/carousal/CarousalNext.svg"
+                alt=""
+              />
             </span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -308,7 +365,7 @@
     <div class="ourvision-wrapper">
       <div class="ourvision-container">
         <p class="ourvision-title-text">Our Values and Vision</p>
-        <img src="./images/BulbImg.svg" alt="our vision image" />
+        <img id="bulbImg" src="./images/BulbImg.svg" alt="our vision image" />
         <p class="ourvision-content-text">
           In the recent years, the farmers had various farmer associations among
           them to help financially and tried to get the awareness of the

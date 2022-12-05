@@ -1,7 +1,7 @@
 .ourvision-wrapper {
   width: 100%;
-  color: var(--primary);
-  background-color: var(--white);
+  color: var(--text-heading);
+  background-color: var(--white-primary);
   display: flex;
   justify-content: center;
   height: 67.5rem;
@@ -25,7 +25,7 @@
 
 .ourvision-container {
   width: 111.125rem;
-  background-color: #fe912a0d;
+  background-color: var(--background-primary);
   border-radius: 5rem;
   margin-bottom: 3.25rem;
   padding: 5rem 13rem;
