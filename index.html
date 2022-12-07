@@ -23,6 +23,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/25527015d1.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
       const showNav = () => {
         document.getElementById("mobile-nav").style.display = "block";
@@ -36,7 +40,7 @@
   </head>
   <body>
     <!-- Header   -->
-    <div class="header-wrapper">
+    <div class="header-wrapper" id="header">
       <nav class="header-container">
         <img src="./images/AdhavaMainLogo.svg" alt="adhava logo" id="logo1" />
         <!-- <img
@@ -50,9 +54,9 @@
           <a href="#">Our Products</a>
           <a href="#">FPO's</a>
           <a href="#">About Us</a>
-          <button id="theme-icon-btn">
+          <button class="theme-icon-btn">
             <img
-              id="theme-icon"
+              class="theme-icon"
               src="./images/darkModeIcon.svg"
               alt="darkModeIcon"
             />
@@ -69,19 +73,28 @@
           </div>
         </div> -->
         <button class="toggle-btn" onclick="showNav()">
-          <img src="./images/burgermenu-icon.svg" alt="" />
+          <i class="fa-solid fa-bars hambuger-menu-icon"></i>
         </button>
       </nav>
       <div class="mobile-nav" id="mobile-nav">
         <div class="mobile-nav-container">
           <button onclick="hideNav()" class="close-btn">
-            <img src="./images/close-icon.svg" alt="" />
+            <i class="fa-solid fa-xmark close-icon"></i>
           </button>
           <a class="active" href="index.html">Home</a>
-          <a href="#marketplace-container">Marketplace</a>
+          <button class="anchor-button" onclick="hideNav()">
+            <a href="#marketplace-container">Marketplace</a>
+          </button>
           <a href="#">Our Products</a>
           <a href="#">FPO's</a>
           <a href="#">About Us</a>
+          <button class="theme-icon-btn">
+            <img
+              class="theme-icon"
+              src="./images/darkModeIcon.svg"
+              alt="darkModeIcon"
+            />
+          </button>
         </div>
       </div>
     </div>
@@ -483,7 +496,8 @@
         <h1 class="marketplace-footer-content">
           Coming soon to your <b>door step...</b>
         </h1>
-        <a href="index.html">
+        <!-- <a href="index.html"> -->
+        <a href="#header">
           <button class="marketplace-button">Back</button>
         </a>
       </div>

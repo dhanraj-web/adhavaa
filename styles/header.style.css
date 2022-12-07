@@ -30,7 +30,7 @@
   gap: 10rem;
 }
 
-#theme-icon-btn {
+.theme-icon-btn {
   border: none;
   background-color: transparent;
 }
@@ -41,9 +41,24 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: var(--white-primary);
   display: none;
   z-index: 999;
+}
+
+.hambuger-menu-icon {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.close-icon {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.anchor-button {
+  border: none;
+  background-color: transparent;
 }
 
 .mobile-nav a {
@@ -63,11 +78,11 @@
 }
 
 .mobile-nav a:hover {
-  border-bottom: 3px solid var(--secondary);
+  border-bottom: 3px solid var(--secondary-constant);
   color: var(--black);
 }
 .mobile-nav a.active {
-  border-bottom: 3px solid var(--secondary);
+  border-bottom: 3px solid var(--secondary-constant);
 }
 .mobile-nav a {
   cursor: pointer;
@@ -93,11 +108,11 @@
 }
 
 .nav-bar a:hover {
-  border-bottom: 3px solid var(--secondary);
+  border-bottom: 3px solid var(--secondary-constant);
   color: var(--black);
 }
 .nav-bar a.active {
-  border-bottom: 3px solid var(--secondary);
+  border-bottom: 3px solid var(--secondary-constant);
 }
 .nav-bar a::after {
   content: "";

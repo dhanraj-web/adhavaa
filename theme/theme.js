@@ -1,5 +1,5 @@
-let themeChangeBtn = document.getElementById("theme-icon-btn");
-let themeIcon = document.getElementById("theme-icon");
+let themeChangeBtn = Array.from(document.querySelectorAll(".theme-icon-btn"));
+let themeIcon = Array.from(document.querySelectorAll(".theme-icon"));
 let mainLogo = document.getElementById("logo1");
 let bannerImg = document.querySelector(".banner");
 let misImg = document.querySelector(".mis-img");
@@ -23,8 +23,12 @@ let scoreCard = document.getElementById("score-card");
 let bulbImg = document.getElementById("bulbImg");
 let svgWrapper = document.querySelector(".svg-wrapper");
 let marketplaceContainer = document.getElementById("marketplace-container");
-
-// console.log("marketplaceContainer", marketplaceContainer);
+let marketplaceCardContainer = document.getElementById(
+  "marketplace-card-container"
+);
+let marketplaceContainerFooter = document.getElementById(
+  "marketplace-footer-container"
+);
 
 // check the theme from localstorage
 let theme = window.localStorage.getItem("theme");
@@ -37,7 +41,8 @@ const ourVisionSvgHandler = (setImage) => {
 const lightThemeHandler = () => {
   window.localStorage.setItem("theme", "light");
   document.body.classList.remove("dark-theme");
-  themeIcon.src = "../images/darkModeIcon.svg";
+  themeIcon[0].src = "../images/darkModeIcon.svg";
+  themeIcon[1].src = "../images/darkModeIcon.svg";
   mainLogo.src = "../images/AdhavaMainLogo.svg";
   bannerImg.style.backgroundImage = "";
   misImg.style.backgroundImage = "";
@@ -60,13 +65,15 @@ const lightThemeHandler = () => {
   scoreCard.src = "../images/carousal/Carousal3-3.svg";
   bulbImg.src = "../images/BulbImg.svg";
   ourVisionSvgHandler("../images/OurvisionSvg.svg");
-  // marketplaceContainer.style.backgroundColor = "";
+  marketplaceContainer.style.background = "";
+  marketplaceContainerFooter.style.background = "";
 };
 
 const darkThemeHandler = () => {
   window.localStorage.setItem("theme", "dark");
   document.body.classList.add("dark-theme");
-  themeIcon.src = "../images/lightModeIcon.svg";
+  themeIcon[0].src = "../images/lightModeIcon.svg";
+  themeIcon[1].src = "../images/lightModeIcon.svg";
   mainLogo.src = "../images/AdhavaaMainLogoDark.svg";
   bannerImg.style.backgroundImage = "url(../images/BannerImgDark.svg)";
   misImg.style.backgroundImage = "url(../images/mis-dark.svg)";
@@ -90,9 +97,10 @@ const darkThemeHandler = () => {
   scoreCard.src = "../images/carousal/Carousal3-3-dark.svg";
   bulbImg.src = "../images/bulbImgDark.svg";
   ourVisionSvgHandler("../images/OurvisionSvgDark.svg");
-  // marketplaceContainer.style.backgroundColor =
-  //   "linear-gradient(to right, " + red + ", " + blue + ")";
-  // marketplaceContainer.style.backgroundColor = "red";
+  marketplaceContainer.style.background = "transparent";
+  marketplaceCardContainer.style.background = "none";
+  marketplaceContainerFooter.style.background = "none";
+  marketplaceContainer.style.background = `linear-gradient(${"#031E29"}, ${"#0E2732"})`;
 };
 
 const themeChangeHandler = (mode) => {
@@ -106,7 +114,10 @@ const themeChangeHandler = (mode) => {
   }
 };
 
-themeChangeBtn.addEventListener("click", () => {
+themeChangeBtn[0].addEventListener("click", () => {
+  themeChangeHandler(window.localStorage.getItem("theme"));
+});
+themeChangeBtn[1].addEventListener("click", () => {
   themeChangeHandler(window.localStorage.getItem("theme"));
 });
 
