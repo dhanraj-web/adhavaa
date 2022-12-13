@@ -1,16 +1,16 @@
 #marketplace-container {
   height: 100vh;
   display: grid;
-  grid-template-rows: auto 1.4fr 1fr;
+  grid-template-rows: auto auto auto;
   text-align: center;
   box-sizing: border-box;
-  background-color: var(--white);
+  background: var(--white);
 }
 
 #marketplace-header-title {
   margin: 0;
   font-size: 3.2rem;
-  padding: 2.5% 0;
+  padding: 3rem 0;
   font-weight: 600;
   color: var(--primary);
 }
@@ -216,6 +216,9 @@
 }
 
 @media screen and (width < 1440px) {
+  #marketplace-container {
+    height: 100%;
+  }
   #marketplace-card-container {
     background-color: var(--white);
     gap: 2%;
@@ -234,6 +237,7 @@
 @media screen and (width <= 1024px) {
   #marketplace-header-title {
     font-size: 2.5rem;
+    padding: 2.5rem 0;
   }
   #marketplace-card-container {
     gap: 5rem;
@@ -247,6 +251,7 @@
 @media screen and (width <= 786px) {
   #marketplace-header-title {
     font-size: 2rem;
+    padding: 2rem 0;
   }
   #marketplace-card-container {
     row-gap: 14rem;

@@ -1,7 +1,7 @@
 .ourvision-wrapper {
   width: 100%;
   color: var(--text-heading);
-  background-color: var(--white-primary);
+  background-color: var(--white);
   display: flex;
   justify-content: center;
   height: 67.5rem;
