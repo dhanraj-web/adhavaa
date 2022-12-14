@@ -47,10 +47,10 @@ const lightThemeHandler = () => {
   bannerImg.style.backgroundImage = "";
   misImg.style.backgroundImage = "";
   posImg.style.backgroundImage = "";
-  sateliteImg.style.backgroundImage = "";
+  // sateliteImg.style.backgroundImage = "";
   carouselMis.src = "../images/carousal/CarousalImg1.png";
   carouselPos.src = "../images/carousal/CarousalImg2.png";
-  carouselSatellite.src = "../images/carousal/CarousalImg3.png";
+  // carouselSatellite.src = "../images/carousal/CarousalImg3.png";
   carousalPrev.src = "../images/carousal/CarousalPrev.svg";
   carousalNext.src = "../images/carousal/CarousalNext.svg";
   customDashboard.src = "../images/carousal/carousal1-1.svg";
@@ -60,9 +60,9 @@ const lightThemeHandler = () => {
   inventory.src = "../images/carousal/Carousal2-1.svg";
   invoice.src = "../images/carousal/Carousal2-2.svg";
   dashboard.src = "../images/carousal/Carousal2-3.svg";
-  supportWhatsapp.src = "../images/carousal/Carousal3-1.svg";
-  landCertificate.src = "../images/carousal/Carousal3-2.svg";
-  scoreCard.src = "../images/carousal/Carousal3-3.svg";
+  // supportWhatsapp.src = "../images/carousal/Carousal3-1.svg";
+  // landCertificate.src = "../images/carousal/Carousal3-2.svg";
+  // scoreCard.src = "../images/carousal/Carousal3-3.svg";
   bulbImg.src = "../images/BulbImg.svg";
   ourVisionSvgHandler("../images/OurvisionSvg.svg");
   marketplaceContainer.style.background = "";
@@ -78,11 +78,11 @@ const darkThemeHandler = () => {
   bannerImg.style.backgroundImage = "url(../images/BannerImgDark.svg)";
   misImg.style.backgroundImage = "url(../images/mis-dark.svg)";
   posImg.style.backgroundImage = "url(../images/pos-dark.svg)";
-  sateliteImg.style.backgroundImage =
-    "url(../images/chitta-satellite-dark.svg)";
+  // sateliteImg.style.backgroundImage =
+  //   "url(../images/chitta-satellite-dark.svg)";
   carouselMis.src = "../images/carousal/CarousalImg1-dark.png";
   carouselPos.src = "../images/carousal/CarousalImg2-dark.png";
-  carouselSatellite.src = "../images/carousal/CarousalImg3-dark.png";
+  // carouselSatellite.src = "../images/carousal/CarousalImg3-dark.png";
   carousalPrev.src = "../images/carousal/CarousalPrevDark.svg";
   carousalNext.src = "../images/carousal/CarousalNextDark.svg";
   customDashboard.src = "../images/carousal/carousal1-1-dark.svg";
@@ -92,9 +92,9 @@ const darkThemeHandler = () => {
   inventory.src = "../images/carousal/Carousal2-1-dark.svg";
   invoice.src = "../images/carousal/Carousal2-2-dark.svg";
   dashboard.src = "../images/carousal/Carousal2-3-dark.svg";
-  supportWhatsapp.src = "../images/carousal/Carousal3-1-dark.svg";
-  landCertificate.src = "../images/carousal/Carousal3-2-dark.svg";
-  scoreCard.src = "../images/carousal/Carousal3-3-dark.svg";
+  // supportWhatsapp.src = "../images/carousal/Carousal3-1-dark.svg";
+  // landCertificate.src = "../images/carousal/Carousal3-2-dark.svg";
+  // scoreCard.src = "../images/carousal/Carousal3-3-dark.svg";
   bulbImg.src = "../images/bulbImgDark.svg";
   ourVisionSvgHandler("../images/OurvisionSvgDark.svg");
   marketplaceContainer.style.background = "transparent";
