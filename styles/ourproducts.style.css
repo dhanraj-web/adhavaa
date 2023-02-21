@@ -1,7 +1,7 @@
 .our-products-wrapper {
   /* height: 20vh;
   width: 100%; */
-  padding-top: 23.75rem;
+  /* padding-top: 23.75rem; */
   background: linear-gradient(
     180deg,
     var(--gradient-secondary-1) 0%,
@@ -164,9 +164,24 @@
   .product-card {
     width: 22.6875rem;
   }
+  .title-text{
+    font-size: 1.3rem;
+  }
+  .subtitle-text{
+    font-size: 1.625rem;
+  }
+  .content-text{
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+  .card-content{
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
 }
 @media only screen and (max-width: 400px) {
   .product-card {
     width: 20.6875rem;
+    margin: 0 2%;
   }
 }
