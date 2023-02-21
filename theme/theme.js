@@ -22,14 +22,15 @@ let landCertificate = document.getElementById("land-certificate");
 let scoreCard = document.getElementById("score-card");
 let bulbImg = document.getElementById("bulbImg");
 let svgWrapper = document.querySelector(".svg-wrapper");
-let marketplaceContainer = document.getElementById("marketplace-container");
-let marketplaceCardContainer = document.getElementById(
-  "marketplace-card-container"
-);
-let marketplaceContainerFooter = document.getElementById(
-  "marketplace-footer-container"
-);
+// let marketplaceContainer = document.getElementById("marketplace-container");
+// let marketplaceCardContainer = document.getElementById(
+//   "marketplace-card-container"
+// );
+// let marketplaceContainerFooter = document.getElementById(
+//   "marketplace-footer-container"
+// );
 let subscribeBtn = document.querySelector('.subscribe-btn');
+let bannerBgImage = document.querySelector('.banner-bg-image-container img');
 
 // check the theme from localstorage
 let theme = window.localStorage.getItem("theme");
@@ -45,7 +46,7 @@ const lightThemeHandler = () => {
   themeIcon[0].src = "../images/darkModeIcon.svg";
   themeIcon[1].src = "../images/darkModeIcon.svg";
   mainLogo.src = "../images/AdhavaMainLogo.svg";
-  bannerImg.style.backgroundImage = "";
+  // bannerImg.style.backgroundImage = "";
   misImg.style.backgroundImage = "";
   posImg.style.backgroundImage = "";
   // sateliteImg.style.backgroundImage = "";
@@ -66,10 +67,9 @@ const lightThemeHandler = () => {
   // scoreCard.src = "../images/carousal/Carousal3-3.svg";
   bulbImg.src = "../images/BulbImg.svg";
   ourVisionSvgHandler("../images/OurvisionSvg.svg");
-  marketplaceContainer.style.background = "";
-  marketplaceContainerFooter.style.background = "";
-  bannerImg.classList.remove('dark-banner-mobile');
-  bannerImg.classList.add('light-banner-mobile');
+  // marketplaceContainer.style.background = "";
+  // marketplaceContainerFooter.style.background = "";
+  bannerBgImage.setAttribute('src',"../images/BannerImg.svg");
 };
 
 const darkThemeHandler = () => {
@@ -78,7 +78,7 @@ const darkThemeHandler = () => {
   themeIcon[0].src = "../images/lightModeIcon.svg";
   themeIcon[1].src = "../images/lightModeIcon.svg";
   mainLogo.src = "../images/AdhavaaMainLogoDark.svg";
-  bannerImg.style.backgroundImage = "url(../images/BannerImgDark.svg)";
+  // bannerImg.style.backgroundImage = "url(../images/BannerImgDark.svg)";
   misImg.style.backgroundImage = "url(../images/mis-dark.svg)";
   posImg.style.backgroundImage = "url(../images/pos-dark.svg)";
   // sateliteImg.style.backgroundImage =
@@ -100,12 +100,11 @@ const darkThemeHandler = () => {
   // scoreCard.src = "../images/carousal/Carousal3-3-dark.svg";
   bulbImg.src = "../images/bulbImgDark.svg";
   ourVisionSvgHandler("../images/OurvisionSvgDark.svg");
-  marketplaceContainer.style.background = "transparent";
-  marketplaceCardContainer.style.background = "none";
-  marketplaceContainerFooter.style.background = "none";
-  marketplaceContainer.style.background = `linear-gradient(${"#031E29"}, ${"#0E2732"})`;
-  bannerImg.classList.add('dark-banner-mobile');
-  bannerImg.classList.remove('light-banner-mobile');
+  // marketplaceContainer.style.background = "transparent";
+  // marketplaceCardContainer.style.background = "none";
+  // marketplaceContainerFooter.style.background = "none";
+  // marketplaceContainer.style.background = `linear-gradient(${"#031E29"}, ${"#0E2732"})`;
+  bannerBgImage.setAttribute('src',"../images/BannerImgDark.svg");
 };
 
 const themeChangeHandler = (mode) => {
