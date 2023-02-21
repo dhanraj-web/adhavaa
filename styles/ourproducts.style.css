@@ -172,9 +172,11 @@
   }
   .content-text{
     font-size: 0.875rem;
+    line-height: 1.7;
   }
   .card-content{
     font-size: 0.875rem;
+    line-height: 1.7;
   }
 }
 @media only screen and (max-width: 400px) {
