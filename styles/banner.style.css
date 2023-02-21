@@ -131,6 +131,7 @@
   .banner-title {
     line-height: 3rem;
     font-size: 1.5rem;
+    font-weight: 500;
   }
   .banner-sub-title {
     font-size: 12px;
