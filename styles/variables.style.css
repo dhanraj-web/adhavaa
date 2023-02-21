@@ -21,6 +21,7 @@
   --number: #fff2e3;
   --tag-fold: #803800;
   --shadow: #727272;
+  --border:none;
 }
 
 .dark-theme {
@@ -46,4 +47,5 @@
   /* --number-light: #fff2e3; */
   /* --tag-fold: #803800; */
   --shadow: #031e29;
+  --border: 1px solid white;
 }

@@ -111,7 +111,7 @@
 }
 @media only screen and (max-width: 500px) {
   .custom-input {
-    width: 20rem;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -121,11 +121,25 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .banner{
+    background-position: center center;
+    filter: initial;
+  }
+  .banner-container{
+    top: -34.6125rem;
+  }
   .banner-title {
     line-height: 3rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .banner-sub-title {
-    font-size: 1rem;
+    font-size: 12px;
+  }
+  .subscribe-btn{
+    width: 10.313rem;
+    height: 2.75rem;
+    background-color: #03374B;
+    color: white;
+    border: var(--border);
   }
 }

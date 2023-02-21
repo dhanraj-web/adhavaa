@@ -60,26 +60,27 @@
   }
 
   .ourvision-title-text {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     text-align: center;
   }
   .ourvision-content-text {
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.5rem;
   }
 
   .ourvision-wrapper {
-    padding: 2rem;
+    padding: 2rem 0;
   }
-  .ourvision-container img {
-    height: 10rem;
+
+  #bulbImg {
+    height: 7rem;
   }
   .ourvision-container {
     gap: 1rem;
     margin-bottom: 1.25rem;
   }
   .svg-wrapper img {
-    height: 5rem;
+    height: 4rem;
   }
   .svg-wrapper {
     height: 5rem;

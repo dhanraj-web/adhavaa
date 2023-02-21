@@ -29,6 +29,7 @@ let marketplaceCardContainer = document.getElementById(
 let marketplaceContainerFooter = document.getElementById(
   "marketplace-footer-container"
 );
+let subscribeBtn = document.querySelector('.subscribe-btn');
 
 // check the theme from localstorage
 let theme = window.localStorage.getItem("theme");
@@ -67,6 +68,8 @@ const lightThemeHandler = () => {
   ourVisionSvgHandler("../images/OurvisionSvg.svg");
   marketplaceContainer.style.background = "";
   marketplaceContainerFooter.style.background = "";
+  bannerImg.classList.remove('dark-banner-mobile');
+  bannerImg.classList.add('light-banner-mobile');
 };
 
 const darkThemeHandler = () => {
@@ -101,6 +104,8 @@ const darkThemeHandler = () => {
   marketplaceCardContainer.style.background = "none";
   marketplaceContainerFooter.style.background = "none";
   marketplaceContainer.style.background = `linear-gradient(${"#031E29"}, ${"#0E2732"})`;
+  bannerImg.classList.add('dark-banner-mobile');
+  bannerImg.classList.remove('light-banner-mobile');
 };
 
 const themeChangeHandler = (mode) => {
